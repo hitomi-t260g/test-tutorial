@@ -1,4 +1,4 @@
-<img src="img/スクリーンショット 2022-09-22 1.55.11.png" alt="testing image">
+<img src="img/スクリーンショット 2022-09-22 1.58.11.png" alt="testing image">
 
 <h2 align="center">test-tutorial</h2>
 <p align="center">
