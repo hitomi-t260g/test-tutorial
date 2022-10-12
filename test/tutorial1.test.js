@@ -17,18 +17,18 @@ describe("三角形の面積が計算されているかを確認する", functio
   it("負値を入力した場合:-1,1(適用外)", function () {
     expect(() => {
       triangleArea(-1, 1);
-    }).to.throw("負値は適用外です");
+    }).to.throw(Error, "負値は適用外です");
   });
 
   it("大きな値MAX_SAFE_INTEGERを入力した場合(処理不可のため適用外）", function () {
     expect(() => {
-      triangleArea(9_007_199_254_740_990, 9_007_199_254_740_990);
-    }).to.throw("値が大きすぎます");
+      triangleArea(9_007_199_254_740_991, 9_007_199_254_740_991);
+    }).to.throw(Error, "値が大きすぎます");
   });
 
   it("底辺か高さに0を入力した場合（適用外）:0,0", function () {
     expect(() => {
       triangleArea(0, 0);
-    }).to.throw("三角形の底辺と高さは0を超える値を入力してください");
+    }).to.throw(Error, "三角形の底辺と高さは0を超える値を入力してください");
   });
 });
